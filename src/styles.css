@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --accent: #FF7043;
+  --text: rgb(75, 75, 75);
+}
+
+html,
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.align-end{
+  justify-content: flex-end;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.margin-right-small{
+  margin-right: 10px;
+}

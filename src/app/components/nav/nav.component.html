@@ -1,0 +1,52 @@
+<div class="social-container">
+  <div class="row gap-10px align-end">
+    <div>
+      <mat-icon svgIcon="lin"></mat-icon>
+    </div>
+    <div>
+      <mat-icon svgIcon="fb"></mat-icon>
+    </div>
+    <div>
+      <mat-icon svgIcon="ins"></mat-icon>
+    </div>
+    <div>
+      <mat-icon svgIcon="twi"></mat-icon>
+    </div>
+  </div>
+</div>
+
+
+<div class="root">
+  <div>
+    <img class="logo" src="assets/logo.png" />
+  </div>
+
+  <div>
+    <div class="nav-container">
+      <a
+        *ngFor="let navItem of navItems"
+        class="margin-right-small"
+        [ngClass]="{ selected: navItem.isSelected }"
+        (click)="onNavItemClick(navItem)"
+      >
+        {{ navItem.label }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<button mat-button color="primary">Primary</button>
+
+<!--
+     <nav mat-tab-nav-bar animationDuration="100ms" mat-align-tabs="start">
+        <a
+          *ngFor="let navItem of navItems"
+          mat-tab-link
+          [routerLink]="navItem.route"
+          [active]="isActive(navItem.route)"
+          [ngClass]="{ selected: isActive(navItem.route) }"
+        >
+          {{ navItem.label }}
+        </a>
+      </nav>
+-->

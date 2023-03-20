@@ -1,0 +1,14 @@
+<div class="root">
+  <div class="chevron-container">
+    <button mat-button (click)="onB1Click(true)" [disabled]="areButtonsDisabled">
+      <mat-icon class="chevron">chevron_left</mat-icon>
+    </button>
+    <button mat-button (click)="onB1Click(true)" [disabled]="areButtonsDisabled">
+      <mat-icon class="chevron">chevron_right</mat-icon>
+    </button>
+  </div>
+  <img class="img-2" [src]="img2Src" [ngClass]="{ appear: b1 }" />
+
+  <img [src]="img1Src" [ngClass]="{ disappear: b1 }" />
+</div>
+<div></div>

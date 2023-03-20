@@ -1,0 +1,40 @@
+.root {
+  height: 700px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 3s opacity;
+}
+
+.img-2 {
+  position: absolute;
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+}
+
+.disappear {
+  opacity: 0;
+}
+
+.chevron-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.chevron {
+  transform: scale(3);
+  color: rgb(214, 214, 214);
+}
